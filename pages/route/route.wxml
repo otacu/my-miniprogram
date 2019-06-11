@@ -1,0 +1,13 @@
+<!--pages/route/route.wxml-->
+
+<view class="map_container">
+   <view class="search">
+      <input bindconfirm='bindConfirm' placeholder="搜索" focus="false"/>
+   </view>
+   <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap" controls='{{controls}}' bindcontroltap='bindcontroltap' polyline="{{polyline}}"></map>
+</view>
+<view class="map_text">
+  <text class="h1">{{textData.name}}</text>
+  <text>{{textData.address}}</text>
+  <view class="ranking" hidden='{{textData.rankingHidden}}'>{{textData.ranking}}</view>
+</view>

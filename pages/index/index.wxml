@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <button bindtap='bindRouteButtonTap'>路线</button>
+  </view>
+  
+</view>
